@@ -7,8 +7,10 @@
 </head>
 <body>
     <script>
-        let numeroAleatorio = Math.round(Math.random() * (10 - 1) + 1);
+        let numeroAleatorio = Math.round(Math.random() * 10 + 1);
         let numeroAdivinado = parseInt(prompt("Ingrese un numero del 1 al 10 para intentar adivinar el numeor generado: "));
+
+        console.log(numeroAleatorio);
 
         if(numeroAdivinado == numeroAleatorio){
             console.log("¡Felicidades, adivinaste el número!");
